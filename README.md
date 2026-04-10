@@ -22,9 +22,9 @@ This project follows a medallion architecture:
 
 ## Current Status
 
-✅ Bronze layer complete
-✅ Silver layer complete
-🚧 Gold layer in progress
+✅ Bronze layer complete  
+✅ Silver layer complete  
+🚧 Gold layer in progress  
 
 ## Dataset
 
