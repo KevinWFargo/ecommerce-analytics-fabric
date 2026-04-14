@@ -40,4 +40,4 @@ This project follows a medallion architecture:
 ---
 
 ## Dataset
-Olist Brazilian E-commerce Dataset (public dataset)
+[Olist Brazilian E-commerce Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
