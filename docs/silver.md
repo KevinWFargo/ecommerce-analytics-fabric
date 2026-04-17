@@ -2,18 +2,20 @@
 
 ## Overview
 
-The Silver layer transforms raw Bronze data into clean, structured tables suitable for analytical modeling.
+The Silver layer transforms raw Bronze data into clean, structured datasets optimized for analytical modeling.
 
-Data is standardized, filtered, and enriched to ensure consistency and usability for downstream analytics.
+At this stage, data is standardized, validated, and enriched to ensure consistency, accuracy, and usability for downstream analytics.
+
+This layer introduces key business logic and prepares data for the star schema implemented in the Gold layer.
 
 ---
 
 ## Transformations Applied
 
-- Column selection to remove unnecessary fields
-- Data type validation
-- Filtering (e.g., removing canceled orders)
-- Data enrichment (joining product categories)
+- Column selection to remove unnecessary fields and reduce dataset size
+- Data type validation to ensure consistency across tables
+- Filtering to include only completed ("delivered") orders, ensuring accurate revenue and order metrics
+- Data enrichment through joins (e.g., mapping product categories to English names)
 - Handling missing values (e.g., replacing null categories with "unknown")
 
 ---
@@ -21,42 +23,43 @@ Data is standardized, filtered, and enriched to ensure consistency and usability
 ## Tables Created
 
 ### silver_order_items
-- Cleaned version of order items data
-- Serves as the foundation for the fact table
+- Cleaned version of order item-level data
+- Serves as the primary input for the fact table in the Gold layer
 
 ### silver_orders
-- Filtered to exclude canceled orders
-- Contains order lifecycle timestamps
+- Filtered to include only valid ("delivered") transactions
+- Contains order lifecycle timestamps for time-based analysis
 
 ### silver_customers
 - Simplified customer dimension
-- Includes city and state information
+- Includes geographic attributes such as city and state
 
 ### silver_products
-- Enriched with English category names via join
-- Missing categories handled
+- Enriched with standardized English category names
+- Missing or undefined categories handled
 
 ### silver_sellers
 - Clean seller dimension
-- Includes location data
+- Includes seller location information
 
 ---
 
 ## Design Principles
 
-- Keep transformations minimal and intentional
-- Maintain consistency across tables
-- Prepare data for star schema modeling in Gold layer
+- Apply minimal but meaningful transformations
+- Introduce business logic to ensure data reflects valid transactions
+- Maintain consistency across datasets
+- Prepare data for efficient star schema modeling in the Gold layer
 
 ---
 
 ## Screenshots
 
 ### Notebook Overview
-![Notebook Overview](../screenshots/silver/notebook_overview.png)
+![Notebook Overview](../images/fabric/silver/notebook_overview.png)
 
 ### Silver Tables
-![Silver Tables](../screenshots/silver/silver_tables.png)
+![Silver Tables](../images/fabric/silver/silver_tables.png)
 
 ### Sample Table
-![Sample Table](../screenshots/silver/sample_table.png)
+![Sample Table](../images/fabric/silver/sample_table.png)
