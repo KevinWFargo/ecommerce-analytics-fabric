@@ -3,13 +3,13 @@
 ## 📊 Dashboard Overview
 
 ### Sales Overview
-![Overview](images/power_bi/overview.png)
+![Overview](images/powerbi/overview.png)
 
 ### Sales Trends & Insights
-![Trends](images/power_bi/trends.png)
+![Trends](images/powerbi/trends.png)
 
 ### Product Drill-Through
-![Product Details](images/power_bi/product_details.png)
+![Product Details](images/powerbi/product_details.png)
 
 ---
 
@@ -81,13 +81,13 @@ This project follows a medallion architecture:
 ## 🎯 Interactive Features
 
 ### Custom Tooltips
-![Tooltip](images/power_bi/tooltip.png)
+![Tooltip](images/powerbi/tooltip.png)
 
 ---
 
 ## 📊 Data Model
 
-![Data Model](images/power_bi/data_model.png)
+![Data Model](images/powerbi/data_model.png)
 
 The Gold layer is structured as a star schema:
 - `gold_fact_sales` (fact table)
