@@ -15,7 +15,7 @@
 
 ## 🔗 Live Dashboard
 
-[View Interactive Power BI Report](https://app.fabric.microsoft.com/view?r=eyJrIjoiOWM4MWExZDYtYjkzYi00NjM1LWExOGMtYWFlNGVmN2RmZjkzIiwidCI6IjNhNDA4NTc1LTdiNWMtNGRhOC1hNzRkLTNhNGQ3MDA4NjU0ZCJ9&pageName=0ecc507036c284b78dd3)
+[View Interactive Power BI Report](https://app.fabric.microsoft.com/view?r=eyJrIjoiZWY2ZGFlZTctMzQzNi00OWZhLTkzNTItMDA0NzczZGRkZDQ2IiwidCI6IjNhNDA4NTc1LTdiNWMtNGRhOC1hNzRkLTNhNGQ3MDA4NjU0ZCJ9)
 
 ---
 
